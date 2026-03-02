@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Peace Within Chaos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Peace Within Chaos</h1>
+    <p>A safe place for messy feelings.</p>
+
+    <button onclick="showDiary()">Start Writing</button>
+    <div id="diary" style="display: none; margin-top: 20px;">
+    <textarea id="entry" rows="10" cols="40" placeholder="Write your thoughts here..."></textarea>
+    <br><br>
+    <button onclick="saveEntry()">Save</button>
+
+    <h3>Saved Entries:</h3>
+    <div id="savedEntries"></div>
+</div>
+<hr style="margin:40px;">
+
+<h2>Chaos Wall</h2>
+<button onclick="showCanvas()">Open Chaos Wall</button>
+
+<div id="canvasContainer" style="display:none; margin-top:20px;">
+    <div style="margin-bottom:10px;">
+    <button onclick="changeColor('black')">Black</button>
+    <button onclick="changeColor('red')">Red</button>
+    <button onclick="changeColor('blue')">Blue</button>
+    <button onclick="changeColor('green')">Green</button>
+    <button onclick="changeColor('purple')">Purple</button>
+</div>
+<div style="margin-bottom:10px;">
+    <button onclick="changeBrushSize(2)">Thin</button>
+    <button onclick="changeBrushSize(5)">Medium</button>
+    <button onclick="changeBrushSize(10)">Thick</button>
+</div>
+    <canvas id="chaosCanvas" width="600" height="400" 
+        style="background:white; border-radius:10px;">
+    </canvas>
+    <br><br>
+    <button onclick="clearCanvas()">Clear</button>
+</div>
+
+<script src="script.js"></script>
+
+   
+
+   
+</body>
+</html>
