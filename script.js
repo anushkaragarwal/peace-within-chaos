@@ -60,6 +60,9 @@ let ctx;
 let drawing = false;
 let currentColor = "black";
 let brushSize = 3;
+function useEraser() {
+    currentColor = "white";
+}
 function showCanvas() {
     document.getElementById("canvasContainer").style.display = "block";
 
