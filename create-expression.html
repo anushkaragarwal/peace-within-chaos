@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Create Expression</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+
+<body class="forest-bg">
+
+<h2>Create Expression</h2>
+
+<label>Upload Artwork</label>
+<input type="file" id="artUpload">
+
+<br><br>
+
+<label>Emotion</label>
+
+<select id="emotionTag" onchange="toggleOtherEmotion()">
+<option value="none">None</option>
+<option value="calm">Calm</option>
+<option value="lonely">Lonely</option>
+<option value="strong">Strong</option>
+<option value="hopeful">Hopeful</option>
+<option value="love">Love</option>
+<option value="guilt">Guilt</option>
+<option value="regret">Regret</option>
+<option value="happiness">Happiness</option>
+<option value="other">Other</option>
+</select>
+
+<br><br>
+
+<input type="text" id="customEmotion"
+placeholder="Write your emotion"
+style="display:none">
+
+<br><br>
+
+<label>Identity</label>
+<input type="radio" name="identity" value="anonymous" checked>Anonymous
+<input type="radio" name="identity" value="username">Username
+
+<br><br>
+
+<label>Visibility</label>
+<input type="radio" name="visibility" value="private" checked>Private
+<input type="radio" name="visibility" value="public">Public
+
+<br><br>
+
+<button onclick="shareExpression()">Share</button>
+
+<div id="artGallery"></div>
+
+</body>
+</html>
