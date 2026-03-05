@@ -531,3 +531,72 @@ filter: drop-shadow(0 0 10px #ffffff)
         drop-shadow(0 0 20px #c084fc)
         drop-shadow(0 0 30px #f472b6);
 }
+.login-bg{
+
+background-image:url("home-bg.jpg");
+
+background-size:cover;
+
+background-position:center;
+
+height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-family:Arial, sans-serif;
+
+}
+
+.login-container{
+
+background:rgba(0,0,0,0.5);
+
+padding:40px;
+
+border-radius:12px;
+
+text-align:center;
+
+color:white;
+
+backdrop-filter:blur(6px);
+
+}
+
+.login-container input{
+
+width:220px;
+
+padding:10px;
+
+border-radius:8px;
+
+border:none;
+
+}
+
+.login-container button{
+
+padding:10px 20px;
+
+border-radius:8px;
+
+border:none;
+
+background:#a78bfa;
+
+color:white;
+
+cursor:pointer;
+
+}
+
+.login-sub{
+
+color:#e5e7eb;
+
+}
