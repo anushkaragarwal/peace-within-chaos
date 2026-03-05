@@ -53,3 +53,18 @@ The idea is that even within chaos, **there can still be peace**.
 ## 👩‍💻 Author
 
 This project was built as my **first personal web development project**, exploring how technology can support creativity and emotional expression.
+## Screenshots
+
+### Home Page
+![Home](home.png)
+
+### Chaos Wall
+![Chaos Wall](chaoswall.png)
+
+### Writing Space
+![Writing](writing.png)
+
+### Upload Artwork
+![Upload](upload.png)
+### Login Page
+![Login](login.png)
