@@ -1,3 +1,4 @@
+![Peace Within Chaos Logo](logo.png)
 # 🌿 Peace Within Chaos
 
 *A calm digital space to express your chaos through art and words.*
