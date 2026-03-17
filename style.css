@@ -693,3 +693,30 @@ color:#e5e7eb;
 margin-bottom:15px;
 
 }
+#galleryGrid{
+display:grid;
+grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
+gap:20px;
+padding:20px;
+}
+
+.art-card{
+background:white;
+border-radius:12px;
+padding:10px;
+box-shadow:0 4px 12px rgba(0,0,0,0.2);
+overflow:hidden;
+}
+
+.art-card img{
+width:100%;
+border-radius:10px;
+}
+button{
+transition:0.3s;
+}
+
+button:hover{
+transform:scale(1.05);
+box-shadow:0 4px 15px rgba(0,0,0,0.3);
+}

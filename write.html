@@ -19,7 +19,12 @@
 This space is just for you. Write without pressure.
 </p>
 
-<textarea id="writingBox" placeholder="Write what you feel..."></textarea>
+<textarea 
+id="journalText" 
+placeholder="This space is just for you..." 
+rows="10" 
+cols="50">
+</textarea>
 
 <br><br>
 
@@ -33,9 +38,43 @@ This space is just for you. Write without pressure.
 
 <br><br>
 
-<button onclick="saveWriting()">Save</button>
+<button onclick="saveJournal()">Save</button>
 
 </div>
+
+<script>
+
+async function saveJournal(){
+
+const text = document.getElementById("journalText").value;
+
+const visibility = document.querySelector('input[name="visibility"]:checked').value;
+
+const response = await fetch("http://localhost:3000/api/journal",{
+
+method:"POST",
+
+headers:{
+"Content-Type":"application/json"
+},
+
+body:JSON.stringify({
+text:text,
+visibility:visibility,
+date:new Date()
+})
+
+});
+
+const data = await response.json();
+
+alert("Journal saved successfully!");
+
+console.log(data);
+
+}
+
+</script>
 
 </body>
 
